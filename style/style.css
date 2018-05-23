@@ -1,0 +1,129 @@
+
+body {
+  /* background-color: rgb(230, 230, 230); */
+  background: linear-gradient(to bottom, #1a2330 0%, #0b0f14 100%);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  margin: inherit;
+}
+
+body h1, h2 {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bilde {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+}
+
+/* lagt til disse */
+#link1:hover {
+}
+
+#link2:hover {
+}
+
+#link3:hover {
+}
+
+.lenker {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  align-content: center;
+  /* padding-right: 10%; */
+  margin: 10%;
+}
+
+/* la til style på lenkene */
+.lenker a{
+  text-decoration: none;
+  text-align: center;
+}
+
+.lenker img {
+  height: 300px;
+  width: 400px;
+}
+
+.lenker{
+  margin-top: 20%;
+  /* margin-bottom: auto; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bodytext {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+}
+
+.faktaboks{
+  width: inherit;
+}
+
+#fakta{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#faktaboks{
+  border: solid;
+  background-color: #8B0000;
+  border-radius: 5px;
+  border-color: #8B0000;
+  border-radius: 5px;
+  width: 300px;
+  color: white;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Nunito", "Light";
+  letter-spacing: 1px;
+}
+
+#faktaboks:hover {
+  padding: 5px;
+  border: solid;
+  border-color: white;
+  border-radius: 5px;
+  background-color: #0b0f14;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+/* Styling for mindre skjermer, innhold i kolonne i stedet for rekker. */
+@media screen and (max-width : 1024px){
+  .lenker {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+  }
+}
