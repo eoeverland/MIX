@@ -1,0 +1,54 @@
+html, body {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  margin: inherit;
+}
+
+body h1, h2 {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+
+.lenker {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-size: 130%;
+}
+
+.lenke {
+  width: 33%;
+  height: 100%;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.lenke img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.lenke :hover {
+  font-size: 120%;
+}
+
+.lenke :hover img{
+  filter: brightness(60%);
+}
+
+
+/* overskrifter til hovedsiden */
+.HeadLine {
+  position: absolute;
+  top: 50%;
+  text-shadow: 2px 2px 4px black;
+  width: 100%;
+}
