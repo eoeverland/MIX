@@ -80,12 +80,11 @@ video {
   object-fit: cover;
 }
 
-/* styling for skrevet av osv. */
-#forfatter {
-  margin-top: -15.8%;
+/* styling for dato publisert. */
+#publisert {
+  margin-top: -11%;
   font-size: 15px;
   text-align: center;
-  /* background-color:rgba(255,255,255,0.2); */
   background-color:rgba(000,000,000,0.2);
   padding: 1%;
 }
@@ -250,7 +249,7 @@ video {
   #ingress {
     padding-bottom: 70%;
   }
-  #forfatter {
+  #publisert {
     margin-top: -6%;
   }
 }
@@ -262,8 +261,8 @@ video {
   #ingress {
     padding-bottom: 70%;
   }
-  #forfatter {
-    margin-top: -17%;
+  #publisert {
+    margin-top: -11.8%;
   }
 }
 
@@ -278,8 +277,8 @@ video {
     padding: -10%;
     margin-left: auto;
   }
-  #forfatter {
-    margin-top: 0%;
+  #publisert {
+    margin-top: -15%;
   }
   body {
     font-size: 20px;
