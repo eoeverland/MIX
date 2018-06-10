@@ -31,7 +31,7 @@ body h1, h2 {
 }
 
 .lenke h2{
-  transition: font-size .2s;
+  transition: font-size .1s;
 }
 
 .lenke :hover {
@@ -48,11 +48,23 @@ body h1, h2 {
   filter: brightness(60%);
 }
 
+.info {
+  color:black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.txt{
+  position: absolute;
+  top:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+}
 
 /* overskrifter til hovedsiden */
 .HeadLine {
-  position: absolute;
-  top: 50%;
   text-shadow: 2px 2px 4px black;
-  width: 100%;
 }
