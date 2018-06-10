@@ -10,7 +10,6 @@ $(document).ready(function(){
   });
 });
 
-
 $(function(){  // $(document).ready shorthand
   $('#ingress').fadeIn('slow');
 });
@@ -29,7 +28,6 @@ $(document).ready(function() {
     });
   });
 });
-
 
 var btn = $('.btn');
 btn.addEventListener("click", function(){
