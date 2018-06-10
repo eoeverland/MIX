@@ -8,5 +8,6 @@ $(document).ready(function(){
         $("#faktaboks").text(title);
       };
   });
+  const lenke = document.getElementById('link1');
+  console.log(lenke);
 });
-// hei alle sammen
