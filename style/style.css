@@ -1,18 +1,93 @@
-
 body {
   /* background-color: rgb(230, 230, 230); */
   background: linear-gradient(to bottom, #1a2330 0%, #0b0f14 100%);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Georgia';
+  font-size: 18px;
   color: white;
   margin: inherit;
 }
 
 body h1, h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Georgia';
   color: white;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#h1Yousef {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Kiona';
+}
+
+/* Overskrift på AlleGirFaen.html */
+#folk {
+  font-size: 70px;
+  font-family: 'Kiona';
+  color: #fff;
+  text-shadow: 5px;
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: 30vmin;
+  padding: 10px;
+  margin: 0 auto;
+  text-shadow: 5px #000;
+  text-align: center;
+  /* background-color:rgba(255,255,255,0.2); */
+}
+
+/* Banner på alle_gir_faen.html */
+#banner {
+  background-image: url("../media/båt.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+  width: 100%;
+  height: 100vmin;
+  margin-bottom: 5%;
+  /* -webkit-mask-image:
+  -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+}
+
+/* Banner på VG og TV2 svarer på kritikken */
+#bannerKritikk {
+  background-image: url("../media/mattias-diesel-281534-unsplash.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+  width: 100%;
+  height: 100vmin;
+  margin-bottom: 5%;
+  /* -webkit-mask-image:
+  -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+}
+
+/* Bilde av Yousef i kantinen på alle_gir_faen.html */
+#image3 {
+  height: 0 auto;
+  width: 200%;
+  margin-left: -50%;
+  object-fit: cover;
+}
+
+/* styling for skrevet av osv. */
+#forfatter {
+  margin-top: -15.8%;
+  font-size: 15px;
+  text-align: center;
+  /* background-color:rgba(255,255,255,0.2); */
+  background-color:rgba(000,000,000,0.2);
+  padding: 1%;
 }
 
 #header {
@@ -22,10 +97,8 @@ body h1, h2 {
   margin-right: auto;
 }
 
+/* bilde av Yousef i kantinen på yousef_hero.html */
 #bilde {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
   width: 100%;
   height: auto;
 }
@@ -38,6 +111,11 @@ body h1, h2 {
 }
 
 #link3:hover {
+}
+
+/* "Les mer om Yousef" på AlleGirFaen.html */
+#lenke {
+  color: white;
 }
 
 .lenker {
@@ -64,7 +142,6 @@ body h1, h2 {
 
 .lenker{
   margin-top: 20%;
-  /* margin-bottom: auto; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -76,44 +153,86 @@ body h1, h2 {
   line-height: 30px;
 }
 
-.faktaboks{
-  width: inherit;
+.faktaboks {
+  width: 100%;
 }
 
-#fakta{
-  display: none;
-  margin-left: auto;
+/* ingress på alle_gir_faen.html */
+#ingress {
+  width: 150%;
+  height: 200px;
+  font-size: 30px;
+  margin-left: -25%;
   margin-right: auto;
-  width: 40%;
+  font-style: italic;
+  line-height: 140%;
+  padding-top: 30%;
+  padding-bottom: 40%;
+  opacity: 0;
+  text-shadow: 5px;
+  font-family: "Georgia";
 }
 
-#faktaboks{
+#fakta {
+  display: none;
+  background-color: #fff;
+  color: black;
+  padding-top: 4%;
+}
+
+#faktaboks {
   border: solid;
   background-color: #8B0000;
   border-radius: 5px;
   border-color: #8B0000;
   border-radius: 5px;
-  width: 300px;
   color: white;
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 8px;
   text-align: center;
-  font-family: "Nunito", "Light";
-  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: 'Kiona';
 }
 
 #faktaboks:hover {
-  padding: 5px;
+  padding: 8px;
   border: solid;
   border-color: white;
   border-radius: 5px;
-  background-color: #0b0f14;
+  background-color: #8B0000;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+  cursor: pointer;
+}
 
+#lesmer {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: -15px;
+}
+
+.logo img {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+/* Menyknapp i header */
+.btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  color: #1a2330;
+  color: darkgrey;
 }
 
 /* Styling for mindre skjermer, innhold i kolonne i stedet for rekker. */
@@ -124,6 +243,60 @@ body h1, h2 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 2%;
+  }
+  #folk {
+    top: 10vmin;
+  }
+  #ingress {
+    padding-bottom: 70%;
+  }
+  #forfatter {
+    margin-top: -6%;
+  }
+}
+
+@media screen and (max-width : 1246px){
+  #folk {
+    top: 5vmin;
+  }
+  #ingress {
+    padding-bottom: 70%;
+  }
+  #forfatter {
+    margin-top: -17%;
+  }
+}
+
+@media screen and (max-width : 736px){
+  #folk {
+    top: 5vmin;
+    font-size: 40px;
+  }
+  #ingress {
+    font-size: 22px;
+    width: 100%;
+    padding: -10%;
+    margin-left: auto;
+  }
+  #forfatter {
+    margin-top: 0%;
+  }
+  body {
+    font-size: 20px;
+  }
+  .bodytext {
+    width: 90%;
+  }
+  #lesmer {
+    font-size: 40px;
+    line-height: normal;
+  }
+  #image3 {
+    width: 100%;
+    margin: inherit;
+  }
+  video {
+    width: 100%;
+    height: auto;
   }
 }
