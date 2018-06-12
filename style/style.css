@@ -1,32 +1,35 @@
 body {
-  /* background-color: rgb(230, 230, 230); */
   background: linear-gradient(to bottom, #1a2330 0%, #0b0f14 100%);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  font-family: 'Georgia';
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   color: white;
   margin: inherit;
 }
 body h1, h2 {
-  font-family: 'Georgia';
+  font-family: 'Scope One', serif;
   color: white;
 }
 
-
-#forfatter {
-  margin-top: -15.8%;
-  font-size: 15px;
-  text-align: center;
-  /* background-color:rgba(255,255,255,0.2); */
-  background-color:rgba(000,000,000,0.2);
-  padding: 1%;
+#mot {
+  font-size: 50px;
+  top: 33vmin;
+  position: relative;
 }
 
 #bannerYousef {
   background-image: url("../media/side.jpg");
+  background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+  width: 100%;
+  height: 100vmin;
+  margin-bottom: 5%;
 }
+
 video {
   display: block;
   margin: 0 auto;
@@ -36,13 +39,13 @@ video {
 #h1Yousef {
   text-align: center;
   font-size: 70px;
-  font-family: 'Kiona';
+  font-family: 'Scope One' serif;
 }
 
 /* Overskrift på AlleGirFaen.html */
 #folk {
   font-size: 70px;
-  font-family: 'Kiona';
+  font-family: 'Scope One', serif;
   color: #fff;
   text-shadow: 5px;
   width: 60%;
@@ -53,7 +56,6 @@ video {
   margin: 0 auto;
   text-shadow: 5px #000;
   text-align: center;
-  /* background-color:rgba(255,255,255,0.2); */
 }
 
 /* Banner på alle_gir_faen.html */
@@ -94,7 +96,7 @@ video {
 
 /* styling for dato publisert. */
 #publisert {
-  margin-top: -11%;
+  margin-top: -8.5%;
   font-size: 15px;
   text-align: center;
   background-color:rgba(000,000,000,0.2);
@@ -118,7 +120,10 @@ video {
   width: 100%;
   height: auto;
 }
+
 #ingress {
+  display: flex;
+  /* background-color: grey; */
   width: 150%;
   height: 200px;
   font-size: 30px;
@@ -128,25 +133,8 @@ video {
   line-height: 140%;
   padding-top: 30%;
   padding-bottom: 40%;
-  opacity: 0;
   text-shadow: 5px;
-  font-family: "Georgia";
-}
-#kjokken {
-  margin-left: -25%;
-  margin-right: auto;
-  padding-top: 30%;
-  padding-bottom: 40%;
-
-}
-/* lagt til disse */
-#link1:hover {
-}
-
-#link2:hover {
-}
-
-#link3:hover {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* "Les mer om Yousef" på AlleGirFaen.html */
@@ -193,57 +181,70 @@ video {
   width: 100%;
 }
 
-/* ingress på alle_gir_faen.html */
-#ingress {
-  width: 150%;
-  height: 200px;
-  font-size: 30px;
-  margin-left: -25%;
-  margin-right: auto;
-  font-style: italic;
-  line-height: 140%;
-  padding-top: 30%;
-  padding-bottom: 40%;
-  opacity: 0;
-  text-shadow: 5px;
-  font-family: "Georgia";
-}
-
 #fakta {
   display: none;
   background-color: #fff;
   color: black;
-  padding-top: 4%;
+  padding: 4%;
 }
 
 #faktaboks {
   border: solid;
-  background-color: #8B0000;
+  background-color: #c54d07;
   border-radius: 5px;
-  border-color: #8B0000;
+  border-color: #c54d07;
   border-radius: 5px;
   color: white;
-  padding: 8px;
+  padding: 10px;
   text-align: center;
   cursor: pointer;
-  font-family: 'Kiona';
+  font-family: 'Scope One';
+  text-transform: uppercase;
 }
 
 #faktaboks:hover {
-  padding: 8px;
+  padding: 10px;
   border: solid;
   border-color: white;
   border-radius: 5px;
-  background-color: #8B0000;
+  background-color: #c54d07;
   color: white;
   text-align: center;
   cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  background-color: white;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer #lesmer {
+  position: relative;
+  top: 200px;
 }
 
 #lesmer {
   text-align: center;
   font-size: 50px;
   margin-bottom: -15px;
+  color: black;
+}
+
+#Headline1 {
+  color: black;
+}
+
+#Headline2 {
+  color: black;
+}
+
+#Headline3 {
+  color: black;
 }
 
 .logo img {
@@ -271,6 +272,19 @@ video {
   color: darkgrey;
 }
 
+/* Universal map */
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+#kjokken {
+  display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 99%;
+}
+
 /* Styling for mindre skjermer, innhold i kolonne i stedet for rekker. */
 @media screen and (max-width : 1024px){
   .lenker {
@@ -283,16 +297,34 @@ video {
   #folk {
     top: 10vmin;
   }
+  #mot {
+    top: 10vmin;
+  }
   #ingress {
     padding-bottom: 70%;
   }
   #publisert {
     margin-top: -6%;
   }
+  #bannerYousef {
+    width: 100%;
+    margin: inherit;
+  }
+  #bannerKritikk {
+    width: 100%;
+    margin: inherit;
+  }
+  #banner {
+    width: 100%;
+    margin: inherit;
+  }
 }
 
 @media screen and (max-width : 1246px){
   #folk {
+    top: 5vmin;
+  }
+  #mot {
     top: 5vmin;
   }
   #ingress {
@@ -301,12 +333,27 @@ video {
   #publisert {
     margin-top: -11.8%;
   }
+  #bannerYousef {
+    width: 100%;
+    margin: inherit;
+  }
+  #bannerKritikk {
+    width: 100%;
+    margin: inherit;
+  }
+  #banner {
+    width: 100%;
+    margin: inherit;
+  }
 }
 
 @media screen and (max-width : 736px){
   #folk {
     top: 5vmin;
     font-size: 40px;
+  }
+  #mot {
+    top: 5vmin;
   }
   #ingress {
     font-size: 22px;
@@ -335,33 +382,16 @@ video {
     width: 100%;
     height: auto;
   }
-}
-/* Universal map */
-#map {
-  width: 720px;
-  height: 400px;
-  margin: 0;
-}
-
-.btn {
-  background-color: transparent;
-  border: none;
-  color: white;
-  padding: 12px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  font-size: 40px;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  color: #1a2330;
-  color: darkgrey;
-}
-
-#kjokken {
-  display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 99%;
+  #bannerYousef {
+    width: 100%;
+    margin: inherit;
+  }
+  #bannerKritikk {
+    width: 100%;
+    margin: inherit;
+  }
+  #banner {
+    width: 100%;
+    margin: inherit;
+  }
 }
