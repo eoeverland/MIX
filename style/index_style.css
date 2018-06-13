@@ -5,6 +5,7 @@ html, body {
   font-family: 'Nunito', sans-serif;
   color: white;
   margin: inherit;
+  background-color: black;
 }
 
 body h1, h2 {
